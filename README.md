@@ -730,35 +730,38 @@ Each language has its distinct strengths and optimal use cases:
 
 # Programming Language Comparison: Solidity, C++, and Python
 
-## 1. Variable Declaration
+## Variable Declaration 
 
-| Language | Example |
-|----------|---------|
-| **Solidity** | ```solidity
+### Solodity
+```sol
 pragma solidity ^0.8.0;
 contract Example {
     uint public num = 5;
 }
-``` |
-| **C++** | ```cpp
+```
+
+### C++
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
     int num = 5;
     return 0;
 }
-``` |
-| **Python** | ```python
+```
+
+### Python 
+
+```py
 # Variables are dynamically typed in Python
 num = 5
 print(num)
-``` |
+```
 
-## 2. Conditional Statements
+## Conditional Statements 
 
-| Language | Example |
-|----------|---------|
-| **Solidity** | ```solidity
+### Solidity 
+```sol
 pragma solidity ^0.8.0;
 contract Example {
     uint public num = 5;
@@ -770,8 +773,9 @@ contract Example {
         }
     }
 }
-``` |
-| **C++** | ```cpp
+```
+### C++ 
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -783,20 +787,19 @@ int main() {
     }
     return 0;
 }
-``` |
-| **Python** | ```python
+```
+### Python 
+```py
 num = 5
 if num > 0:
     print("Positive")
 else:
     print("Negative or Zero")
-``` |
+```
+## Loops 
 
-## 3. Loops
-
-| Language | Example |
-|----------|---------|
-| **Solidity** | ```solidity
+### Solidity 
+```sol
 pragma solidity ^0.8.0;
 contract Example {
     function loop() public pure returns (uint) {
@@ -807,8 +810,9 @@ contract Example {
         return sum;
     }
 }
-``` |
-| **C++** | ```cpp
+```
+### C++ 
+```cpp
 #include <iostream>
 using namespace std;
 int main() {
@@ -817,25 +821,27 @@ int main() {
     }
     return 0;
 }
-``` |
-| **Python** | ```python
+```
+### Python 
+```py
 for i in range(1, 6):
     print(i)
-``` |
 
-## 4. Functions
+```
 
-| Language | Example |
-|----------|---------|
-| **Solidity** | ```solidity
+## Functions
+
+### Solidity 
+```sol 
 pragma solidity ^0.8.0;
 contract Example {
     function add(uint x, uint y) public pure returns (uint) {
         return x + y;
     }
 }
-``` |
-| **C++** | ```cpp
+```
+### C++ 
+```cpp
 #include <iostream>
 using namespace std;
 int add(int x, int y) {
@@ -845,19 +851,21 @@ int main() {
     cout << add(5, 3);
     return 0;
 }
-``` |
-| **Python** | ```python
+```
+### Python
+```py 
 def add(x, y):
     return x + y
 
 print(add(5, 3))
-``` |
 
-## 5. Arrays
+```
 
-| Language | Example |
-|----------|---------|
-| **Solidity** | ```solidity
+## Arrays 
+
+### Solidity 
+```sol
+
 pragma solidity ^0.8.0;
 contract Example {
     uint[] public arr;
@@ -866,8 +874,10 @@ contract Example {
         arr.push(x);
     }
 }
-``` |
-| **C++** | ```cpp
+```
+### C++
+```cpp 
+
 #include <iostream>
 using namespace std;
 int main() {
@@ -875,17 +885,18 @@ int main() {
     cout << arr[0];
     return 0;
 }
-``` |
-| **Python** | ```python
+```
+### Python 
+```py 
 arr = [1, 2, 3]
 arr.append(4)
 print(arr[0])
-``` |
+```
+## Object-Oriented Programming 
 
-## 6. Object-Oriented Programming
+### Solidity 
+```sol
 
-### Solidity
-```solidity
 pragma solidity ^0.8.0;
 
 contract Animal {
@@ -908,8 +919,7 @@ contract Dog is Animal {
     }
 }
 ```
-
-### C++
+### C++ 
 ```cpp
 #include <iostream>
 using namespace std;
@@ -942,9 +952,8 @@ int main() {
     return 0;
 }
 ```
-
-### Python
-```python
+### Python 
+```py
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -963,21 +972,22 @@ dog = Dog()
 print(dog.sound())
 ```
 
-## Summary
-1. **Solidity**
+## Summary 
+1. Solidity
    - Tailored for blockchain development
    - Enforces gas optimization
    - Explicit memory/storage separation
 
-2. **C++**
+2. C++
    - Best for high-performance tasks
    - Detailed control over memory
    - Direct hardware access
 
-3. **Python**
+3. Python
    - Easy to read and write
    - Ideal for rapid development
    - Great for scripting and prototyping
+
 
 
 
@@ -1007,5 +1017,5 @@ print(dog.sound())
 - Learning Resources:
   - CryptoZombies Tutorial
   - Ethernaut Tutorial
-  - Ovi Shekh [YouTube]()
+  - Ovi Shekh [YouTube](https://www.youtube.com/@ovishkh/videos)
 
